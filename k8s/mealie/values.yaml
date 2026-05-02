@@ -1,0 +1,25 @@
+replicaCount: 2
+
+image:
+  repository: testingkyaw/mealie
+  tag: v2
+  pullPolicy: IfNotPresent
+
+containerPort: 3000
+
+env: production
+
+db:
+  host: postgres.database.svc.cluster.local
+  port: "5432"
+  name: mealie
+  user: mealie
+  password: mealie
+
+resources:
+  requests:
+    cpu: "100m"
+    memory: "128Mi"
+  limits:
+    cpu: "500m"
+    memory: "512Mi"
