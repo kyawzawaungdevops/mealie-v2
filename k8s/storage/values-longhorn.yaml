@@ -5,3 +5,5 @@ persistence:
   defaultClassReplicaCount: 1
 csi:
   kubeletRootDir: /var/snap/microk8s/common/var/lib/kubelet
+defaultSettings:
+  guaranteedInstanceManagerCPU: "0"
