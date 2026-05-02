@@ -1,18 +1,23 @@
-database: fossa
-username: fossa
-password: fossa123
-image.registry: quay.io
-image.repository: fossa/postgres
-image.tag: 17.2-1
 
-imageCredentials:
-	username: fossa+customer
-	password: HELLOWORLD1
-
+postgresqlUsername: mealie
+postgresqlPassword: mealie
+postgresqlDatabase: mealie
+ 
+service:
+  type: ClusterIP
+  port: 5432
+ 
+persistence:
+  enabled: true
+  size: 3Gi
+  # storageClass: ""  # uncomment and set if needed
+ 
 resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
   limits:
     cpu: 500m
     memory: 512Mi
-  requests:
-    cpu: 500m
-    memory: 512Mi
+ 
+imageTag: "15"
