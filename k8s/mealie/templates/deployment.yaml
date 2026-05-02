@@ -24,7 +24,7 @@ spec:
 
     spec:
       containers:
-        - name: {{ .Chart.Name }}
+        - name: mealie
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
 
@@ -42,6 +42,9 @@ spec:
 
             - name: POSTGRES_PORT
               value: {{ .Values.db.port | quote }}
+
+            - name: DB_ENGINE
+              value: postgres
 
           resources:
             requests:
