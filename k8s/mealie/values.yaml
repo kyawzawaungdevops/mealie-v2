@@ -5,7 +5,7 @@ image:
   tag: v2
   pullPolicy: IfNotPresent
 
-containerPort: 3000
+containerPort: 9000
 
 env: production
 
@@ -15,6 +15,11 @@ db:
   name: mealie
   user: mealie
   password: mealie
+
+service:
+  type: NodePort
+  port: 9000
+  nodePort: 30900
 
 resources:
   requests:
