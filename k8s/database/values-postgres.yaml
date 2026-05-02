@@ -35,9 +35,9 @@ service:
 
 ## Postgresql values
 postgresql:
-  username: postgres
-  password: postgres
-  database: postgres
+  username: mealie
+  password: mealie
+  database: mealie
   port: 5432
   # initdbArgs 
   # initdbWalDir
