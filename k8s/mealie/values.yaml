@@ -7,7 +7,6 @@ image:
 
 containerPort: 9000
 
-env: production
 
 db:
   host: mealie-db-postgresql.database.svc.cluster.local
