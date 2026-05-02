@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "mealie-chart.fullname" . }}
+  name: mealie
   labels:
     app.kubernetes.io/name: {{ include "mealie-chart.name" . }}
     helm.sh/chart: {{ include "mealie-chart.chart" . }}
