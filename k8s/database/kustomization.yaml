@@ -13,7 +13,7 @@ labels:
 helmCharts:
   - name: cloudnative-pg
     repo: https://cloudnative-pg.github.io/charts
-    version: 1.29.0
+    version: 0.28.0
     releaseName: postgres
     namespace: database
     valuesFile: values-postgres.yaml
