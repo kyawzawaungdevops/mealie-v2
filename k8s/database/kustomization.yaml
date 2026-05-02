@@ -11,6 +11,5 @@ helmCharts:
     repo: https://cetic.github.io/helm-charts
     version: 0.2.1
     releaseName: mealie-db
-    namespace: database
     valuesFile: values-postgres.yaml
 
