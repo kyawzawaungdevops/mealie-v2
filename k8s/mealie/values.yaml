@@ -10,7 +10,7 @@ containerPort: 3000
 env: production
 
 db:
-  host: postgres-postgresql.database.svc.cluster.local
+  host: mealie-db-postgresql.database.svc.cluster.local
   port: "5432"
   name: mealie
   user: mealie
