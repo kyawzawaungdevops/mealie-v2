@@ -5,7 +5,6 @@ namespace: app
 
 resources:
   - namespace.yaml
-  - secret.yaml
 
 commonLabels:
   app: mealie
