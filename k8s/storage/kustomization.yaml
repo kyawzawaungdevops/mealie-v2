@@ -1,16 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: longhorn
+namespace: longhorn-system
 resources:
   - namespace.yaml
-labels:
-  - pairs:
-      app: mealie
 helmCharts:
   - name: longhorn
     repo: https://charts.longhorn.io
-    version: 1.11.1
+    version: 1.7.2
     releaseName: longhorn
-    namespace: longhorn
+    namespace: longhorn-system
     valuesFile: values-longhorn.yaml
-
