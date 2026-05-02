@@ -9,7 +9,7 @@ service:
 persistence:
   enabled: true
   size: 3Gi
-  # storageClass: ""  # uncomment and set if needed
+  storageClass: longhorn
  
 resources:
   requests:
